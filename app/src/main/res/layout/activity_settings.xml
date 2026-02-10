@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar (this is what gives you the arrow + menu) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Settings" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Button 1 name"
+                android:maxLength="20"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ " />
+
+            <EditText
+                android:id="@+id/etBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Button 2 name"
+                android:maxLength="20"
+                android:layout_marginTop="10dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ " />
+
+            <EditText
+                android:id="@+id/etBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Button 3 name"
+                android:maxLength="20"
+                android:layout_marginTop="10dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ " />
+
+            <EditText
+                android:id="@+id/etMaxEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Maximum number of events (5–200)"
+                android:inputType="number"
+                android:layout_marginTop="14dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="18dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: 0"
+        android:textSize="24sp"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnEvent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event 1"/>
+
+    <Button
+        android:id="@+id/btnEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event 2"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnEvent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event 3"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnShowCounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show My Counts"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Settings" />
+
+</LinearLayout>
