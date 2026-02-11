@@ -44,7 +44,7 @@ public class  MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        // If settings are not saved yet, force SettingsActivity
+
         if (!prefs.hasSettings()) {
             startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             return;
@@ -64,13 +64,13 @@ public class  MainActivity extends AppCompatActivity {
     }
 
     private void handleEventPress(int eventNum) {
-        // Make sure settings exist
+
         if (!prefs.hasSettings()) {
             startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             return;
         }
 
-        // Max events rule (5..200 limit is in settings, this enforces it)
+
         if (!prefs.canAddEvent()) {
             Toast.makeText(this, "Max events reached", Toast.LENGTH_SHORT).show();
             return;

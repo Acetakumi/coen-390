@@ -28,7 +28,7 @@ public class DataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data);
 
-        // Toolbar (prevents "no menu / no arrow")
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
@@ -49,11 +49,10 @@ public class DataActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        refreshUI(); // ✅ THIS is what you were missing
+        refreshUI();
     }
 
     private void refreshUI() {
-        // If settings not saved yet, avoid crashes
         if (!prefs.hasSettings()) {
             tvCount1.setText("1: 0");
             tvCount2.setText("2: 0");

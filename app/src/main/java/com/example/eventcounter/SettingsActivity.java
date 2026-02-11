@@ -13,12 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class SettingsActivity extends AppCompatActivity {
-
     private SharedPreferenceHelper prefs;
-
     private EditText etBtn1, etBtn2, etBtn3, etMaxEvents;
     private Button btnSave;
-
     private boolean isEditMode = false;
 
     @Override
@@ -26,7 +23,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // 🔴 THIS is what makes the arrow + menu appear
+
         Toolbar tb = findViewById(R.id.toolbarSettings);
         setSupportActionBar(tb);
 
@@ -53,7 +50,6 @@ public class SettingsActivity extends AppCompatActivity {
             setEditMode(true);
         }
     }
-
     private void loadAndDisplay() {
         Settings s = prefs.getSettings();
 
@@ -73,7 +69,6 @@ public class SettingsActivity extends AppCompatActivity {
             setEditMode(true);
         }
     }
-
     private void setEditMode(boolean enabled) {
         isEditMode = enabled;
 
@@ -84,7 +79,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         btnSave.setVisibility(enabled ? View.VISIBLE : View.GONE);
     }
-
     private void attemptSave() {
         String b1 = etBtn1.getText().toString().trim();
         String b2 = etBtn2.getText().toString().trim();
@@ -117,13 +111,11 @@ public class SettingsActivity extends AppCompatActivity {
 
         finish(); // go back to MainActivity
     }
-
     private boolean isValidName(String s) {
         if (s == null || s.isEmpty() || s.length() > 20) return false;
         return s.matches("[A-Za-z ]+");
     }
 
-    // Menu (Edit button)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_settings, menu);
@@ -145,7 +137,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
     @Override
     public boolean onSupportNavigateUp() {
         finish();
