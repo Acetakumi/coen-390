@@ -54,10 +54,10 @@ public class DataActivity extends AppCompatActivity {
 
     private void refreshUI() {
         if (!prefs.hasSettings()) {
-            tvCount1.setText("1: 0");
-            tvCount2.setText("2: 0");
-            tvCount3.setText("3: 0");
-            tvTotal.setText("Total: 0");
+            tvCount1.setText("counter 1: 0");
+            tvCount2.setText("counter 2: 0");
+            tvCount3.setText("counter 3: 0");
+            tvTotal.setText("Total Events: 0");
 
             listHistory.setAdapter(new ArrayAdapter<>(
                     this,

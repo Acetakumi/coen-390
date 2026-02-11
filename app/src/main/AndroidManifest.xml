@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EventCounter">
 
-        <!-- Main / Launcher Activity -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,13 +20,13 @@
             </intent-filter>
         </activity>
 
-        <!-- Settings Screen -->
+
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
 
-        <!-- Data / History Screen -->
+
         <activity
             android:name=".DataActivity"
             android:exported="false"

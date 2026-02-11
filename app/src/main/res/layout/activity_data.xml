@@ -9,7 +9,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="My Counts" />
+        app:title="Data Activity" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,14 +22,14 @@
             android:id="@+id/tvCount1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event 1: 0"
+            android:text="Event A: 0"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvCount2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event 2: 0"
+            android:text="Event B: 0"
             android:textSize="18sp"
             android:paddingTop="6dp" />
 
@@ -37,7 +37,7 @@
             android:id="@+id/tvCount3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event 3: 0"
+            android:text="Event C: 0"
             android:textSize="18sp"
             android:paddingTop="6dp" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/tvTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total: 0"
+            android:text="Total Events: 0"
             android:textSize="18sp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
